@@ -1,0 +1,33 @@
+txt_pt = ' '
+txt_ticun = ' '
+while True:
+terminal = input('1- Introduzir o texto 2- Imprimir 3- Sair')
+# falta: o if imprimir, if sair, identar corretamente
+lingua = input('Selecione uma lingua: pt-BR/Ticu/Sair')
+if lingua.lower() == 'pt-br':
+while True:
+  linha = input()
+          if linha == 'fim':
+      break
+      txt_pt = txt_pt + linha
+elif:
+lingua.lower() == 'ticu':
+while True:
+linha = input()
+            if linha == 'fim':
+            break
+         txt_ticu = txt_ticu + linha
+elif:
+lingua.lower == 'sair':
+print('Fim')
+break
+
+
+# imprimir do início ao fim, da primeira frase à última, em sequencia, alternando as linguas
+
+#acha,imprime,deleta, usa um marcador
+#pode ser uma função
+# falta imprimir alternando as linguas
+txt= 'abc * dfg'
+print(txt[0:txt.find('*')])
+txt = txt - txt[0:txt.find('*')]
