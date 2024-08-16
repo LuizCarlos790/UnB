@@ -1,33 +1,37 @@
-txt_pt = ' '
-txt_ticun = ' '
+texto_ticuna = ''
+texto_portugues = ''
+
+
 while True:
-terminal = input('1- Introduzir o texto 2- Imprimir 3- Sair')
-# falta: o if imprimir, if sair, identar corretamente
-lingua = input('Selecione uma lingua: pt-BR/Ticu/Sair')
-if lingua.lower() == 'pt-br':
-while True:
-  linha = input()
-          if linha == 'fim':
+  portugues = input('Digite o texto em portugues: ')
+  if portugues == 'fim':
       break
-      txt_pt = txt_pt + linha
-elif:
-lingua.lower() == 'ticu':
+      texto_portugues = texto_portugues + portugues('\n')
+      texto_portugues = texto_portugues.split('$')
+     
+
 while True:
-linha = input()
-            if linha == 'fim':
-            break
-         txt_ticu = txt_ticu + linha
-elif:
-lingua.lower == 'sair':
-print('Fim')
-break
+    ticuna  = input('Digite o texto em ticuna: ')
+    if ticuna == 'fim':
+        break
+        texto_ticuna = texto_ticuna + ticuna('\n')
+        texto_ticuna = texto_ticuna.split('$')
+       
+print("As entradas foram finalizadas. Agora você pode buscar traduções.\n")
 
+while True:
+    busca = input("Digite uma palavra ou frase em portugues para traduzir (ou 'sair' para terminar): ")
+    if busca.lower() == 'sair':
+        break
 
-# imprimir do início ao fim, da primeira frase à última, em sequencia, alternando as linguas
+    linhas_portugues = texto_portugues.split('\n')
+    linhas_ticuna = texto_ticuna.split('\n')
 
-#acha,imprime,deleta, usa um marcador
-#pode ser uma função
-# falta imprimir alternando as linguas
-txt= 'abc * dfg'
-print(txt[0:txt.find('*')])
-txt = txt - txt[0:txt.find('*')]
+    if busca in linhas_portugues:
+        indice = linhas_portugues.index(busca)
+        traducao = linhas_ticuna[indice]
+        print(f"A tradução de '{busca}' para portugues é: '{traducao}'")
+    else:
+        print(f"Não foi encontrada uma tradução para '{busca}'.")
+
+print("Busca de traduções finalizada.")
