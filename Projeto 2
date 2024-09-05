@@ -1,0 +1,31 @@
+texto_portugues = "1Nosso Povo¬ 2Aqui começa a história do tempo dos antigos ¬ 3O início da história ¬ 4Antes do mundo existir, Ngutapa já existia.¬"
+texto_ticuna = "1TORÜ DUǕ'ǕGÜ¬ 2 Nori arü ügü ga ore ga nucüma'ǖ ga torü ga na nhunhaacü yi'i'ǖ.¬ 3 Norü ügü tchiga ¬ 04 Nüma ga Ngutapa ga naãne nama'ã ya ĩĩtchicü,¬"
+
+
+dicionario = {}
+for i in range(1, 5):# 25
+        
+    num_chave = texto_portugues.find(f'{i}')
+    fim_chave = texto_portugues.find('¬')
+    palavra_chave = texto_portugues[num_chave+1:fim_chave]
+    texto_portugues = texto_portugues.replace(f'{i}',' ', 1)
+    texto_portugues = texto_portugues.replace('¬',' ', 1)
+    if f'{i}' in texto_portugues:
+        num_chave = texto_portugues.find(f'{i}')
+        fim_chave = texto_portugues.find('¬')
+        palavra_chave += texto_portugues[num_chave+1:fim_chave]
+    
+    num_chave = texto_ticuna.find(f'{i}')
+    fim_chave = texto_ticuna.find('¬')
+    palavra_equivalente = texto_ticuna[num_chave+1:fim_chave]
+    texto_ticuna = texto_ticuna.replace('¬',' ', 1)
+    
+    dicionario[palavra_chave] = palavra_equivalente
+    
+for i in dicionario:
+    print(f'|{i}|')
+while True:
+    comando = input('Boa noite, Digite o texto em portugues, ou Sair para terminar: \n')
+    if comando.lower() == 'sair':
+        break
+    print(f'Tradução: {dicionario[comando]}\n')
