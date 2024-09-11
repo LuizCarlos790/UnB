@@ -53,7 +53,7 @@ Rü yeguma ga tüma ga Mapana rü marü nüǖ ta inü'ǖ rü wüiparagu ni'ĩ ga
 32Rü ngǖ ga ini'ĩ ni'ĩngu, rü marü tama yema i natch¬ 33rü tüma ga norü na'ma ga Mapana, rü tüma i ti'u rü yema yirüma ni'ĩ rü nüna iti'ãma ga ĩpatawa¬.  
 Rü yeguma ga nüma rü marü taguma i natchi rü nüma ga 35naãpüǖ rü marü manarütchaapüǖ¬ ,34rü yemaãcü tama ini'ĩu rü ini waatchigü, rü nhumata inangu ga ĩpatawa ga nayaanegü¬.
 """
-## Entrada, temporariamente desabilitada para testes, mas acho que o professor disse para não usar entrada ##
+## Entrada, desabiltada porque o professor disse que nao precisa ##
 '''while True:
   portugues = input('Digite o texto em portugues: ')
   if portugues == 'fim':
@@ -68,38 +68,30 @@ while True:
     if ticuna == 'fim':
         break
     texto_ticuna = texto_ticuna + ticuna'''
-
+## Processamento de dados
 dicionario = {}
 for i in range(1, 39):
         
-    num_chave = texto_portugues.find(f'{i}')
+    num_chave = texto_portugues.find(str(i))
     fim_chave = texto_portugues.find('¬',num_chave )
     if i >= 10:
-        palavra_chave = texto_portugues[num_chave+2:fim_chave]
+        palavra_portugues = texto_portugues[num_chave+2:fim_chave]
     else:
-        palavra_chave = texto_portugues[num_chave+1:fim_chave]
-    texto_portugues = texto_portugues.replace(f'{i}',' ', 1)
+        palavra_portugues = texto_portugues[num_chave+1:fim_chave]
+    texto_portugues = texto_portugues.replace(str(i),' ', 1)
     texto_portugues = texto_portugues[:num_chave] + texto_portugues[num_chave:].replace('¬',' ', 1)
     
-    num_chave = texto_ticuna.find(f'{i}')
+    num_chave = texto_ticuna.find(str(i))
     fim_chave = texto_ticuna.find('¬',num_chave )
     if i >= 10:
-        palavra_equivalente = texto_ticuna[num_chave+2:fim_chave]
+        palavra_ticuna = texto_ticuna[num_chave+2:fim_chave]
     else:
-        palavra_equivalente = texto_ticuna[num_chave+1:fim_chave]
-    texto_ticuna = texto_ticuna.replace(f'{i}',' ', 1)
+        palavra_ticuna = texto_ticuna[num_chave+1:fim_chave]
+    texto_ticuna = texto_ticuna.replace(str(i),' ', 1)
     texto_ticuna = texto_ticuna[:num_chave] + texto_ticuna[num_chave:].replace('¬',' ', 1)
     
-    dicionario[palavra_chave] = palavra_equivalente
-## Saída velha    
-for i in dicionario:
-    print(f'|{i}|')
-while True:
-    comando = input('Boa noite, Digite o texto em portugues, ou Sair para terminar: \n')
-    if comando.lower() == 'sair':
-        break
-    print(f'Tradução: {dicionario[comando]}\n')
+    dicionario[str(i)] = (palavra_portugues, palavra_ticuna)
 
-## Saída Nova:Para cada item no dicionario, imprime: a chave, o primeiro item da lista, e o segundo item da lista
-'''For i in dicionário:
-    Print(f'Id: {i}\nTranslation:\n  Pt: {i[0]}\nTicuna: {i[1]}')'''
+## Saída:Para cada item no dicionario, imprime: a chave, o primeiro item da tupla, e o segundo item da tupla
+for i in dicionario:
+    print(f'Id: {i}\nTranslation:\n  Pt: {dicionario[i][0]}\n  Tca: {dicionario[i][1]}\n')
