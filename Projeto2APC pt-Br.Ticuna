@@ -1,7 +1,60 @@
-#texto_portugues = "1Nosso Povo¬ 2Aqui começa a história do tempo dos antigos ¬ 3O início da história ¬ 4Antes do mundo existir, Ngutapa já existia.¬"
-#texto_ticuna = "1TORÜ DUǕ'ǕGÜ¬ 2 Nori arü ügü ga ore ga nucüma'ǖ ga torü ga na nhunhaacü yi'i'ǖ.¬ 3 Norü ügü tchiga ¬ 04 Nüma ga Ngutapa ga naãne nama'ã ya ĩĩtchicü,¬"
+texto_portugues = """1NOSSO POVO¬
+2Aqui começa a história do tempo dos antigos¬
+3O início da história¬
+4Antes do mundo existir, Ngutapa já existia.¬ Ele não teve pai nem mãe. Mapana, a mulher de Ngutapa, se criou junto com ele. No mesmo lugar viviam também Baia e sua mulher. 5Baia era parente de Ngutapa.¬ No lugar onde esses quatro se criaram é onde ficava a montanha Taiwegüne, 6É no igarapé Tonetü.¬7Naquele tempo, a terra ainda estava se formando. O mato era baixinho e o rio ainda tinha pouca água, lá eles viviam.¬ 
+8Passaram-se muitos anos.¬ Ngutapa e Mapana nunca habitaram juntos. 9Nunca tiveram filhos¬. 
 
-while True:
+Um dia, 10quando o mato já estava crescido,¬11Ngutapa foi caçar com Mapana.¬ No caminho eles começaram a brigar. 12Ngutapa agarrou sua mulher e lhe deu uma surra.¬13Depois disso, amarrou Mapana num pau, de braços e pernas abertos.¬14Deixou ela ali e seguiu para caçar no mato.¬15Vieram as cabas e as formigas e morderam a sua periquita.¬ 16Ela sofreu muito.¬17Então apareceu o pássaro cancã e se sentou no alto do pau onde ela estava amarrada.¬18Mapana disse para o cancã:¬
+19-Vovó, pode me desamarrar?¬
+20O pássaro gritou:
+-Co, co, co, cou!¬
+-21Vovó, venha me desamarrar.¬22Aquele desgraçado me prendeu aqui para me matar - ela falou de novo.¬
+
+23O cancã se transformou em gente¬, 24chegando mais perto, perguntou¬: 
+-25O que lhe aconteceu, minha neta?¬ 26Se você quiser se vingar de Ngutapa, está aqui a caba¬. 
+27Ela pegou a caba e guardou.¬ 
+A casa de caba era muito grande, mas parecia pequena. O Cancã falou ainda: 
+-Você não pode ficar aí. Tem que esperar o seu marido num lugar onde ele não possa ver. 
+28Depois disso, o cancã se transformou em pássaro e foi embora¬. 
+Demorou um pouco e 29Ngutapa voltou da caçada.¬ 36Vinha tocando flauta e pulava numa perna e noutra, cantando¬:
+
+-Por onde anda Mapana?! As cabas e as formigas morderam a periquita dela! 37Tcheruru tcheruru-u-u-u... Tcheruru tcheruru-u-u-u... - assim dizia.¬
+30Mapana estava esperando Ngutapa passar ¬38escondida num tronco de árvore¬,. Escutou esse canto e se preparou. Quando ele chegou, ela jogou a casa de caba em cima dele e 31acertou-lhe os dois joelhos¬. 32Ngutapa caiu e não se levantou mais¬. 33Mapana deixou ele ali mesmo e foi embora¬. 34Ngutapa foi se arrastando até em casa¬. 
+Desde que as cabas ferraram, 35seus joelhos começaram a inchar¬.
+"""
+
+texto_ticuna = """1TORÜ DUǕ'ǕGÜ¬
+2Nori arü ügü ga ore ga nucüma'ǖ ga torü ga na nhunhaacü yi'i'ǖ.¬
+3Norü ügü tchiga¬
+4Nüma ga Ngutapa ga naãne nama'ã ya ĩĩtchicü¬, rü nge'eǖ rü na tauma i ta'acü i nhũma na yema i na i aẽǖrü'ǖ. Rü yiĩ'ǖ ngema na yamareǖ ga Ngutapa.
+I nori'ǖtchicü, ingeguma, rü norü tchiura ta ngemana yaǖ, rü ya Baia rü ta cünanangemaǖ rü norü tchiura rü ta nangemaǖ.  Erü nüma ga 5Baia rü Ngutapa tanü'ǖ ni'ĩ rü wü'iva na yae.¬
+Nucüma ngeguma rü numa ga Ngutapa rü na tauǖma ga norü bue nu'ǖ tayema yerü tauguma nügüga nidau,  ga namamaã rü na yaemare.  
+Ngeguma yema namamare i ya'ĩ,  rü tauguma i buǖã,  ga ngĩma ga Mapana,  rü yemaca ngitchi naai ga nüma ga Ngutapa.  
+7Inacü i ngeguma i ngema.  I Taiwegüne i nori naãene i üǖwacü rü ngema ni'ĩ i nangemagüǖ erü ngema i nori naü'ǖ i naãene nua¬ 6natü i Tonetü¬.  
+Erü yeguma ãrü naãenecü rü wü'i i ngewaca i ya eaneǖrǖ'ǖ ni'ĩ yerü natauma ga nhãtü rü yema nawa nayemagüǖ ricatama ni'ĩ.  
+Rü yeguma ngemamã ni'ĩ i nangemagü'ǖ,  8rü marü nhurema ya taunecǖ na yemagü¬ rü yegumama ni'ĩ ga tüǖ nacuaiǖ ga namã ga Ngutapa rü yeguma rü na tauma ga to,  ga duǖ'ǖ nüĩcagümare ni'ĩ ga nayemagü'ǖ.  
+Natürü ga guma Baia rü nü'ǖ tayema ga bue rü naaãcü nǖetcha nüma ga guma.  
+
+Ngutapa 9rü tauguma naãcü¬ rü mu'utchicüma ya tauenecü na ngeacü¬.  
+11Rü yeguma fenewa tümamãã na u'ǖ ga namá ga Ngutapa¬ 10yerü yeguma rü marü nayaanegü ga naĩnecü¬, 12rü yema i na feneeügu ni'ĩ ga tü'ǖ na cuai'ǖ ga nama¬,  13rü yeguma tü'ǖ ya naĩ'ü rü nainewa  tü'ǖ ni'ĩ nai rü ngiparawa ruta, tü'ǖ ni'ĩ naĩgü, rü ngĩtchacü'ǖwa ruta¬.  
+14Rü yemawena rü nüma ga Ngutapa rü na üpetü ga na ya feneǖ¬. 16Yerü yegumarü marü auriǖtchima nguǖ tinge¬, 15rü maẽ rü tü'ǖ nawi rü ẽne, rü tü'ü na ngo ga tümaãrü ngaǖwa¬. 
+ 17Rü Yeguma tümaetügu i na rü wagügü i coou rü ngeguma ngina tacagü¬ 18rü nhãtagürü¬, 19pa noẽ  pa coou tautchiname'ǖ ega tchoǖ icuwẽgǖgu¬20nhãtagürü co-co-co-cou nhatagüǖ¬, 21pa noẽ  tauchina meǖ ega tchoǖ icuiwẽgügu¬ 22rü tchoǖ ni'ĩ ma i ucaǖǖtchi i Ngutapa nhãtagürü¬.
+
+24Rü yeguma ga noẽ i coou ta ngica itarü ĩ  rü ngiǖ ta ngaǖ¬ 25rü cu tücü,  pa tchauta'ã nhãtagürü¬.
+23Rü yeguma ga noẽ ga Co, co, co, cou rü ĩrü duǖ¬.
+Rü yeguma rü tü'ǖ ĩ ya wẽgü 26rü ngeguma cuütanütchaǖgu rü daani'ĩ ya maẽ nhanagürü¬, 27rü yeguma rü inayau ga maẽ ga Mapana¬.  
+Natürü ga guma maẽ rü naega rü ngerata ni'ĩ ga naẽga, natütü guma maẽ  rü na taütchirema rü natürü yiema i daugu rü na i'ra.  Rü yeguma i nayau ga maẽ, rü ngigürügü taũǖ tama ni'ĩ nua.  cuǖna ngẽẽǖ ngigürügü.
+28Rü marü yemawena ga coou rü tüna i ĩgü rü weriǖ ti'igüãrü¬.  
+Rü yeguma ga nüma ga 29Ngutapa rü marü na taegutchaǖ¬, rü yeguma marü nataegugu rü wowerugu ni'ĩ fetchigü rü yeguma ga 30ngima ga Mapana rü marü iya nguẽẽ¬38ga namacüwawa ga naĩpünewa¬.
+
+36Rü nüma ga Ngutapa rü ni'ĩ woweruetchigü rü ni'ĩ wü'i paratchigü, rü ni'ĩ fenagütchigü¬, rü nhãnagürü, nhũmarütchi nhũnhã i Mapana i mae ngi'ǖ wiarü ngaǖãcü rü ẽne ngi'ǖ ngo arü nga'uãcü nhãnagürü!  37Tcherutcheru-u-u-u... 
+tcherurutcheruru-u-u-u... nhanagürü¬. 
+Rü yeguma ga tüma ga Mapana rü marü nüǖ ta inü'ǖ rü wüiparagu ni'ĩ ga numa, rü yeguma marü na ngupetüatchigu rü nügü i'ya caiãtchigu, rü yeguma naweama nenanhãga guma maẽ, 31rü pe ga naã pü'ügu rü norü naiãpüüguta¬.  
+32Rü ngǖ ga ini'ĩ ni'ĩngu, rü marü tama yema i natch¬ 33rü tüma ga norü na'ma ga Mapana, rü tüma i ti'u rü yema yirüma ni'ĩ rü nüna iti'ãma ga ĩpatawa¬.  
+Rü yeguma ga nüma rü marü taguma i natchi rü nüma ga 35naãpüǖ rü marü manarütchaapüǖ¬ ,34rü yemaãcü tama ini'ĩu rü ini waatchigü, rü nhumata inangu ga ĩpatawa ga nayaanegü¬.
+"""
+## Entrada, temporariamente desabilitada para testes, mas acho que o professor disse para não usar entrada ##
+'''while True:
   portugues = input('Digite o texto em portugues: ')
   if portugues == 'fim':
       break
@@ -14,28 +67,31 @@ while True:
     ticuna  = input('Digite o texto em ticuna: ')
     if ticuna == 'fim':
         break
-    texto_ticuna = texto_ticuna + ticuna
+    texto_ticuna = texto_ticuna + ticuna'''
 
 dicionario = {}
-for i in range(1, 5):# 25
+for i in range(1, 39):
         
     num_chave = texto_portugues.find(f'{i}')
-    fim_chave = texto_portugues.find('¬')
-    palavra_chave = texto_portugues[num_chave+1:fim_chave]
+    fim_chave = texto_portugues.find('¬',num_chave )
+    if i >= 10:
+        palavra_chave = texto_portugues[num_chave+2:fim_chave]
+    else:
+        palavra_chave = texto_portugues[num_chave+1:fim_chave]
     texto_portugues = texto_portugues.replace(f'{i}',' ', 1)
-    texto_portugues = texto_portugues.replace('¬',' ', 1)
-    if f'{i}' in texto_portugues:
-        num_chave = texto_portugues.find(f'{i}')
-        fim_chave = texto_portugues.find('¬')
-        palavra_chave += texto_portugues[num_chave+1:fim_chave]
+    texto_portugues = texto_portugues[:num_chave] + texto_portugues[num_chave:].replace('¬',' ', 1)
     
     num_chave = texto_ticuna.find(f'{i}')
-    fim_chave = texto_ticuna.find('¬')
-    palavra_equivalente = texto_ticuna[num_chave+1:fim_chave]
-    texto_ticuna = texto_ticuna.replace('¬',' ', 1)
+    fim_chave = texto_ticuna.find('¬',num_chave )
+    if i >= 10:
+        palavra_equivalente = texto_ticuna[num_chave+2:fim_chave]
+    else:
+        palavra_equivalente = texto_ticuna[num_chave+1:fim_chave]
+    texto_ticuna = texto_ticuna.replace(f'{i}',' ', 1)
+    texto_ticuna = texto_ticuna[:num_chave] + texto_ticuna[num_chave:].replace('¬',' ', 1)
     
     dicionario[palavra_chave] = palavra_equivalente
-    
+## Saída velha    
 for i in dicionario:
     print(f'|{i}|')
 while True:
@@ -43,3 +99,7 @@ while True:
     if comando.lower() == 'sair':
         break
     print(f'Tradução: {dicionario[comando]}\n')
+
+## Saída Nova:Para cada item no dicionario, imprime: a chave, o primeiro item da lista, e o segundo item da lista
+'''For i in dicionário:
+    Print(f'Id: {i}\nTranslation:\n  Pt: {i[0]}\nTicuna: {i[1]}')'''
