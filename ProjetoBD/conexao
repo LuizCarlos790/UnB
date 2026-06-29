@@ -1,0 +1,24 @@
+import psycopg2
+from psycopg2 import sql, OperationalError
+#Dados necessarios para a conexão com o BD.
+config = {
+    'host': 'localhost',
+    'database': 'mydatabase', 
+    'user': 'myuser',
+    'password': 'mypassword',
+    'port': 5432
+}
+#tenta abrir a conexão usando os dados do config.
+def get_connection():
+    try:
+        connection = psycopg2.connect(**config)
+        return connection
+    except OperationalError as e:
+        print(f"Erro ao conectar no PostgreSQL: {e}")
+        return None
+#Fecha a conexão com o BD, usado no final de cada operação.
+def close_connection(connection):
+    if connection:
+        connection.close()
+        print("Conexão com o PostgreSQL fechada com sucesso.")
+
