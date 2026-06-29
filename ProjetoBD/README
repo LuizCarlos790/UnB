@@ -1,0 +1,14 @@
+Projeto da disciplina Banco de Dados da Universidade de Brasília - UnB Campus Darcy Ribeiro
+Membros do grupo: Luiz Carlos Campos de Alencar e Mateus Santos da Silva
+
+Introdução: Sistema de Avaliação Institucional para as Turmas da UnB
+
+O projeto consistirá em um sistema de avaliação institucional para turmas da Universidade de Brasília.
+Será possível cadastrar alunos, professores, disciplinas, turmas e questionários de avaliação para cada turma, com intuito de que professores
+responsáveis por uma turma possam disponibilizar questionários de avaliação para essa, e alunos vinculados à turma possam respondê-los, de forma que
+o professor consiga obter um feedback de sua atuação ao longo do semestre.
+
+O projeto contem:
+-Um banco de dados criado a partir de um modelo relacional no PostgreeSQL.
+-CRUDs
+-Interface Grafica
